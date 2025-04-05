@@ -16,7 +16,7 @@ You can access the quiz instantly by scanning a QR code using your phone!
 
 ## 📷 Scan to Play
 
-![QR Code](Quizgame.jpg)
+![QR Code](Quiz game.jpg)
 
 > 🔔 If you're asked to **"Open QR Code"**, click the button to launch the quiz.
 
