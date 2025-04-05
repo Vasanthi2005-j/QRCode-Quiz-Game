@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Awesome Dynamic Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 Quiz Blitz</h1>
+    <div id="quizBox">
+      <div id="progressBar"><div id="progress"></div></div>
+      <div id="question"></div>
+      <div id="options"></div>
+      <button id="nextBtn" disabled>Next</button>
+    </div>
+    <div id="resultBox" class="hidden">
+      <h2>🎉 Quiz Completed!</h2>
+      <p id="resultText"></p>
+      <button onclick="location.reload()">Restart Quiz</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
