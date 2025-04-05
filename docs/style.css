@@ -1,0 +1,109 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 650px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#quizBox {
+  transition: all 0.3s ease;
+}
+
+#question {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+#options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.option {
+  background: #f0f0f0;
+  border: 2px solid transparent;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.option:hover {
+  background: #d4eaff;
+}
+
+.option.correct {
+  background: #c8f7c5;
+  border-color: #34a853;
+}
+
+.option.wrong {
+  background: #ffdddd;
+  border-color: #e74c3c;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+#progressBar {
+  width: 100%;
+  background: #eee;
+  height: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+#progress {
+  width: 0%;
+  height: 100%;
+  background: #4caf50;
+  transition: width 0.3s;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
